@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.eldenring.ui.CharacterDetailFragement">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/morgott"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/character_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:textColor="@color/olive"
+        app:layout_constraintBottom_toBottomOf="@id/imageView"
+        app:layout_constraintEnd_toEndOf="@id/ccategory"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.7" />
+
+    <TextView
+        android:id="@+id/ccategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/olive"
+        android:text="Category:"
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@+id/character_name" />
+
+    <TextView
+        android:id="@+id/character_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toBottomOf="@+id/ccategory" />
+
+    <TextView
+        android:id="@+id/llocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/olive"
+        android:text="Location:"
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@+id/character_category" />
+
+    <TextView
+        android:id="@+id/character_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/llocation" />
+
+    <TextView
+        android:id="@+id/character_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        app:layout_constraintTop_toBottomOf="@+id/character_location"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
